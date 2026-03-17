@@ -1,0 +1,18 @@
+{
+  "icon": "icon.png",
+  "links": [
+    {
+      "title": "Unsloth",
+      "links": [
+        {
+          "title": "GitHub",
+          "value": "https://github.com/unslothai/unsloth"
+        },
+        {
+          "title": "Docs",
+          "value": "https://unsloth.ai/docs/new/studio"
+        }
+      ]
+    }
+  ]
+}
