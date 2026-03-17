@@ -3,7 +3,7 @@ module.exports = {
   title: "Unsloth Studio",
   description: "Run and train AI models with a unified local interface. https://github.com/unslothai/unsloth",
   menu: async (kernel, info) => {
-    const installed = info.exists("app/env")
+    const installed = info.exists("env")
     const running = {
       install: info.running("install.js"),
       start: info.running("start.js"),

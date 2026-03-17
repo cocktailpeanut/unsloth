@@ -36,9 +36,30 @@ module.exports = {
       }
     },
     {
+      when: "{{exists('app/studio/frontend/node_modules')}}",
+      method: "fs.rm",
+      params: {
+        path: "app/studio/frontend/node_modules"
+      }
+    },
+    {
+      when: "{{exists('app/env')}}",
+      method: "fs.rm",
+      params: {
+        path: "app/env"
+      }
+    },
+    {
+      when: "{{exists('app/unsloth.egg-info')}}",
+      method: "fs.rm",
+      params: {
+        path: "app/unsloth.egg-info"
+      }
+    },
+    {
       method: "shell.run",
       params: {
-        venv: "env",
+        venv: "../env",
         venv_python: "3.12",
         env: studioEnv,
         path: "app",
@@ -52,7 +73,7 @@ module.exports = {
     {
       method: "shell.run",
       params: {
-        venv: "env",
+        venv: "../env",
         venv_python: "3.12",
         env: studioEnv,
         path: "app",
