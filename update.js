@@ -28,7 +28,7 @@ module.exports = {
       path: "app/studio/frontend",
       message: [
         "npm install",
-        "npm run build"
+        "npm exec vite build"
       ]
     }
   },
